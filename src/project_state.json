@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Design and build a modern, premium, high-end restaurant website for \"Royal Flame\" with an elegant, warm, minimal luxury aesthetic and a conversion-focused responsive homepage.",
+  "architectural_notes": [
+    "Visual style: cream/white background with dark brown accents and gold highlights; elegant serif headings with clean sans-serif body typography; warm luxurious minimal look.",
+    "UX/UI requirements: fully responsive layout, modern spacing, soft shadows, smooth scroll animations, clean professional conversion-focused layout."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Royal Flame logo mark on transparent background, elegant minimal gold flame + serif wordmark (royal-flame-logo.dim_512x512.png)\n- Full-width fine dining restaurant interior photo, warm lighting, premium atmosphere (hero-interior.dim_2400x1350.jpg)\n- Fine dining ambience photo for about section, warm luxurious minimal look (about-ambience.dim_1400x1000.jpg)\n- Plated steak with sauce, premium food photography, warm tones (menu-item-1.dim_1200x900.jpg)\n- BBQ platter with grilled meats, premium food photography, warm tones (menu-item-2.dim_1200x900.jpg)\n- Continental pasta dish, premium food photography, warm tones (menu-item-3.dim_1200x900.jpg)\n- Gourmet burger or slider, premium food photography, warm tones (menu-item-4.dim_1200x900.jpg)\n- Seafood plate, premium food photography, warm tones (menu-item-5.dim_1200x900.jpg)\n- Dessert plate, premium food photography, warm tones (menu-item-6.dim_1200x900.jpg)\n- Gallery photo: elegant dining room wide shot, warm lighting (gallery-1.dim_1400x1050.jpg)\n- Gallery photo: close-up plating detail, premium aesthetic (gallery-2.dim_1400x1050.jpg)\n- Gallery photo: chef at grill/BBQ scene, warm dramatic light (gallery-3.dim_1400x1050.jpg)\n- Gallery photo: table setting with glassware, minimal luxury (gallery-4.dim_1400x1050.jpg)\n- Gallery photo: cocktail/mocktail close-up, warm tones (gallery-5.dim_1400x1050.jpg)\n- Gallery photo: dessert close-up, premium aesthetic (gallery-6.dim_1400x1050.jpg)\n- Gallery photo: private dining room ambience, warm lighting (gallery-7.dim_1400x1050.jpg)\n- Gallery photo: assorted dishes on table, premium spread (gallery-8.dim_1400x1050.jpg)",
+  "existing_features": [
+    {
+      "id": "feature-implement-a-single-page-section-based-homepage-for-royal-flame-with-anchor-navigation-and-the-following-sections-in-order-hero-about-featured-menu-why-choose-us-gallery-testimonials-reservations-location-footer",
+      "title": "Implement a single-page, section-based homepage for “Royal Flame” with anchor navigation and the following sections in order: Hero, About, Featured Menu, Why Choose Us, Gallery, Testimonials, Reservations, Location, Footer.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-sticky-top-navbar-with-a-left-aligned-royal-flame-logo-menu-links-home-menu-about-gallery-reservations-contact-and-a-right-aligned-gold-accent-reservation-button",
+      "title": "Create a sticky top navbar with a left-aligned Royal Flame logo, menu links (Home, Menu, About, Gallery, Reservations, Contact), and a right-aligned gold-accent “Reservation” button.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-full-width-hero-section-using-a-high-quality-restaurant-interior-background-image-with-a-dark-gradient-overlay-heading-text-experience-fine-dining-like-never-before-an-emotional-subheading-tagline-and-two-ctas-reserve-a-table-primary-gold-button-and-view-menu-outline-style",
+      "title": "Implement the full-width Hero section using a high-quality restaurant interior background image with a dark gradient overlay, heading text “Experience Fine Dining Like Never Before”, an emotional subheading tagline, and two CTAs: “Reserve a Table” (primary gold button) and “View Menu” (outline style).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-about-section-as-a-split-layout-left-side-image-right-side-a-short-story-paragraph-plus-three-highlight-items-fresh-ingredients-award-winning-chefs-cozy-atmosphere",
+      "title": "Implement the About section as a split layout: left side image, right side a short story paragraph plus three highlight items: Fresh Ingredients, Award Winning Chefs, Cozy Atmosphere.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-featured-menu-section-showing-exactly-6-food-items-in-a-responsive-grid-each-card-includes-a-food-image-name-short-description-and-price-with-a-soft-shadow-hover-effect",
+      "title": "Implement a Featured Menu section showing exactly 6 food items in a responsive grid; each card includes a food image, name, short description, and price, with a soft shadow hover effect.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-why-choose-us-section-with-4-icon-based-features-premium-quality-live-bbq-private-dining-rooms-fast-service",
+      "title": "Implement a “Why Choose Us” section with 4 icon-based features: Premium Quality, Live BBQ, Private Dining Rooms, Fast Service.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-gallery-section-as-a-responsive-grid-of-food-and-interior-images-with-a-lightbox-preview-effect-open-image-in-an-overlay-with-next-previous-controls-and-close",
+      "title": "Implement a Gallery section as a responsive grid of food and interior images with a lightbox preview effect (open image in an overlay with next/previous controls and close).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-testimonials-section-with-centered-card-layout-showing-customer-review-text-and-a-star-rating-for-each-testimonial",
+      "title": "Implement a Testimonials section with centered card layout showing customer review text and a star rating for each testimonial.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-reservations-section-containing-a-booking-form-with-fields-name-phone-date-time-guests-and-a-gold-accent-reserve-button-include-basic-client-side-validation-and-a-clear-success-state-after-submit",
+      "title": "Implement a Reservations section containing a booking form with fields: Name, Phone, Date, Time, Guests, and a gold-accent “Reserve” button; include basic client-side validation and a clear success state after submit.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-location-section-with-an-embedded-map-placeholder-area-plus-address-and-contact-information-presented-clearly",
+      "title": "Implement a Location section with an embedded map placeholder area plus address and contact information presented clearly.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-footer-with-4-columns-about-quick-links-opening-hours-social-media",
+      "title": "Implement a Footer with 4 columns: About, Quick Links, Opening Hours, Social Media.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-the-specified-brand-style-across-the-page-elegant-warm-minimal-luxury-cream-white-backgrounds-dark-brown-accents-gold-highlights-elegant-serif-for-headings-and-clean-sans-serif-for-body-modern-spacing-soft-shadows-and-smooth-scrolling-behavior",
+      "title": "Apply the specified brand style across the page: elegant/warm/minimal luxury; cream/white backgrounds, dark brown accents, gold highlights; elegant serif for headings and clean sans-serif for body; modern spacing, soft shadows, and smooth scrolling behavior.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-and-use-generated-static-image-assets-for-the-hero-about-featured-menu-items-gallery-and-a-simple-royal-flame-logo-stored-under-frontend-public-assets-generated-and-referenced-directly-from-the-frontend",
+      "title": "Add and use generated static image assets for the hero, about, featured menu items, gallery, and a simple Royal Flame logo, stored under frontend/public/assets/generated and referenced directly from the frontend.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Homepage sticky navbar with logo, section links (Home, Menu, About, Gallery, Reservations, Contact) and a gold-accent reservation button",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Hero section with full-width high-quality interior background image, dark gradient overlay, heading/subheading, and CTAs (Reserve a Table, View Menu)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "About section split layout with image, short story copy, and 3 highlights (Fresh Ingredients, Award Winning Chefs, Cozy Atmosphere)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Featured Menu section with 6-item grid cards (image, name, description, price) and soft-shadow hover effects",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Why Choose Us section with icon-based 4 features (Premium Quality, Live BBQ, Private Dining Rooms, Fast Service)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Gallery section with image grid and lightbox preview effect",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Testimonials section with customer reviews, star ratings, and centered card layout",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Reservation section with booking form (Name, Phone, Date, Time, Guests) and gold-accent Reserve button",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Location section with embedded map placeholder plus address and contact info",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Footer with 4 columns (About, Quick Links, Opening Hours, Social Media)",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Royal Flame",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

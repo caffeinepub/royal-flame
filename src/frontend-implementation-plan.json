@@ -1,0 +1,386 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Royal Flame — single-page premium restaurant homepage",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Build a single-page scrolling homepage with 10 ordered sections and anchor-based navigation targets.",
+      "acceptanceCriteria": [
+        "Homepage renders as a single scrolling page with all 10 requested sections present and visually separated.",
+        "Navbar links scroll to the correct section IDs (Home, Menu, About, Gallery, Reservations, Contact)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "create",
+          "description": "Create the single-page layout and render the sections in the required order with stable section IDs for in-page navigation (Hero, About, Featured Menu, Why Choose Us, Gallery, Testimonials, Reservations, Location, Footer)."
+        },
+        {
+          "path": "frontend/src/components/royal-flame/sections/Sections.tsx",
+          "operation": "create",
+          "description": "Add a small composition module that exports the homepage sections in the required order to keep App.tsx readable and ensure section IDs match the navbar links."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Implement a sticky responsive navbar with logo, anchor links, and a gold-accent Reservation CTA (mobile menu supported).",
+      "acceptanceCriteria": [
+        "Navbar stays visible at the top while scrolling.",
+        "Reservation button uses gold highlight styling and stands out from the text links.",
+        "On mobile, navigation remains usable (e.g., collapses into a menu/drawer)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/royal-flame/Navbar.tsx",
+          "operation": "create",
+          "description": "Create a sticky top navbar with the generated logo (frontend/public/assets/generated/royal-flame-logo.dim_512x512.png), anchor links (Home, Menu, About, Gallery, Reservations, Contact), and a right-aligned gold-accent Reservation button. Use shadcn-ui components (e.g., Button + Sheet/Drawer) to support the mobile menu; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the Navbar component into the single-page homepage and connect its links/buttons to the correct section IDs."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Implement the full-width hero with background image, dark overlay, exact heading text, and two CTA buttons that scroll to Menu/Reservations.",
+      "acceptanceCriteria": [
+        "Hero background image is full-width with an overlay gradient to maintain text legibility.",
+        "Hero renders exactly the specified heading text.",
+        "Two CTA buttons are present with distinct primary/outline styling.",
+        "“Reserve a Table” scrolls to the Reservations section; “View Menu” scrolls to Featured Menu."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/royal-flame/sections/HeroSection.tsx",
+          "operation": "create",
+          "description": "Create the hero section using frontend/public/assets/generated/hero-interior.dim_2400x1350.jpg with a dark gradient overlay, heading text “Experience Fine Dining Like Never Before”, an emotional tagline, and two CTAs: primary gold “Reserve a Table” and outline “View Menu”. Use shadcn-ui Button for CTA styling; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Ensure HeroSection is the first section and its CTAs scroll to the Reservations and Featured Menu section IDs."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Implement the About split layout with image, story, and three highlights.",
+      "acceptanceCriteria": [
+        "About section uses a two-column layout on desktop and stacks cleanly on mobile.",
+        "All three highlight items are displayed and readable."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/royal-flame/sections/AboutSection.tsx",
+          "operation": "create",
+          "description": "Create the About section with a responsive split layout: left image frontend/public/assets/generated/about-ambience.dim_1400x1000.jpg and right story paragraph plus highlight items (Fresh Ingredients, Award Winning Chefs, Cozy Atmosphere)."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire AboutSection into the homepage and ensure its section ID matches the navbar’s About anchor."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Implement Featured Menu with exactly 6 items in a responsive grid and premium hover shadow cards.",
+      "acceptanceCriteria": [
+        "Exactly 6 menu cards appear.",
+        "Each menu card contains image, title, description, and price.",
+        "Hover state adds a subtle premium shadow and/or lift effect (where hover is available)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/royal-flame/sections/FeaturedMenuSection.tsx",
+          "operation": "create",
+          "description": "Create a Featured Menu section rendering exactly 6 menu cards in a responsive grid. Use images: frontend/public/assets/generated/menu-item-1.dim_1200x900.jpg through frontend/public/assets/generated/menu-item-6.dim_1200x900.jpg. Use shadcn-ui Card (or consistent Tailwind card styles) for premium visuals; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire FeaturedMenuSection into the homepage and ensure its section ID matches the navbar’s Menu anchor and the hero “View Menu” CTA target."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Implement the Why Choose Us section with 4 icon-based feature tiles.",
+      "acceptanceCriteria": [
+        "All four features are displayed with icons and labels.",
+        "Layout is responsive and maintains consistent spacing/alignment."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/royal-flame/sections/WhyChooseUsSection.tsx",
+          "operation": "create",
+          "description": "Create the Why Choose Us section with 4 icon-based features (Premium Quality, Live BBQ, Private Dining Rooms, Fast Service). Use shadcn-ui utilities/components where helpful (e.g., Card) and a consistent icon approach; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire WhyChooseUsSection into the homepage in the required order."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Implement a responsive Gallery grid with a lightbox overlay preview including next/previous and close controls.",
+      "acceptanceCriteria": [
+        "Gallery displays a grid of images.",
+        "Clicking an image opens a lightbox overlay.",
+        "User can close the lightbox and navigate between images in the overlay."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/royal-flame/sections/GallerySection.tsx",
+          "operation": "create",
+          "description": "Create a responsive gallery grid using frontend/public/assets/generated/gallery-1.dim_1400x1050.jpg through frontend/public/assets/generated/gallery-8.dim_1400x1050.jpg and wire clicks to open a lightbox."
+        },
+        {
+          "path": "frontend/src/components/royal-flame/GalleryLightbox.tsx",
+          "operation": "create",
+          "description": "Implement a lightbox overlay with close + next/previous controls. Prefer shadcn-ui Dialog for the overlay shell and accessible focus handling; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire GallerySection into the homepage and ensure its section ID matches the navbar’s Gallery anchor."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Implement Testimonials as centered premium cards with review text and visible star ratings.",
+      "acceptanceCriteria": [
+        "Each testimonial shows review text and a visible star rating.",
+        "Testimonials are presented in a centered, premium-looking card layout and remain readable on mobile."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/royal-flame/sections/TestimonialsSection.tsx",
+          "operation": "create",
+          "description": "Create Testimonials section with centered card layout and a visible star rating for each testimonial. Use shadcn-ui Card for premium presentation; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/royal-flame/StarRating.tsx",
+          "operation": "create",
+          "description": "Add a small StarRating display component (read-only) to render consistent star visuals for testimonials."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Implement Reservations booking form with required fields, basic client-side validation, and an on-page success state after submit.",
+      "acceptanceCriteria": [
+        "Form contains exactly the requested fields and a Reserve button.",
+        "Invalid submissions are blocked with inline validation feedback (e.g., required fields).",
+        "On successful submit, the user sees a confirmation message/state without a page reload."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/royal-flame/sections/ReservationsSection.tsx",
+          "operation": "create",
+          "description": "Create Reservations section with a booking form containing exactly: Name, Phone, Date, Time, Guests, plus a gold-accent “Reserve” button. Implement basic client-side validation and a success/confirmation state on submit (no page reload). Use shadcn-ui form inputs (Input/Select/Button) if available; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire ReservationsSection into the homepage and ensure the navbar Reservation button and hero “Reserve a Table” CTA scroll to this section ID."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Implement Location section with a map placeholder block and clear address/contact info.",
+      "acceptanceCriteria": [
+        "A map placeholder block is visible and sized appropriately for desktop and mobile.",
+        "Address and contact info are displayed adjacent to or below the map placeholder."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/royal-flame/sections/LocationSection.tsx",
+          "operation": "create",
+          "description": "Create Location section with an embedded map placeholder area (non-interactive placeholder) and adjacent/stacked address + contact info for responsive layouts."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire LocationSection into the homepage and ensure its section ID matches the navbar’s Contact anchor."
+        }
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "summary": "Implement a responsive Footer with four columns: About, Quick Links, Opening Hours, Social Media.",
+      "acceptanceCriteria": [
+        "Footer contains four distinct columns with the requested headings.",
+        "On mobile, footer columns stack in a readable order with consistent spacing."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/royal-flame/Footer.tsx",
+          "operation": "create",
+          "description": "Create the footer with 4 columns (About, Quick Links, Opening Hours, Social Media) and responsive stacking on mobile; ensure Quick Links use in-page anchors that match section IDs."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire Footer into the homepage as the last section (Footer) in the required order."
+        }
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "summary": "Apply global brand styling: cream/white base, dark brown accents, gold highlights, serif headings, sans body, smooth scrolling, premium spacing/shadows, fully responsive.",
+      "acceptanceCriteria": [
+        "Global color palette reflects cream/white + dark brown + gold accent (no default/unstyled theme).",
+        "Headings use a serif font and body text uses a sans-serif font consistently.",
+        "Smooth scrolling is enabled for in-page navigation.",
+        "All sections are responsive with consistent spacing and premium-feeling shadows on cards/buttons where appropriate."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Add global styles for brand palette (cream/white background, dark brown text/accents, gold highlights), typography (serif headings + sans body), base spacing defaults, and enable smooth scrolling for in-page navigation."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend Tailwind theme tokens (colors, fonts, shadows) to support the Royal Flame cream/dark-brown/gold brand styling consistently across sections."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Apply consistent layout primitives (containers, section spacing, card shadows, button variants) across all sections to match the requested premium, minimal luxury style."
+        }
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "summary": "Add and reference generated static image assets (logo, hero, about, menu items, gallery) from frontend/public/assets/generated.",
+      "acceptanceCriteria": [
+        "All required images exist in frontend/public/assets/generated and load correctly in the UI.",
+        "Hero, About, Menu cards, and Gallery render using the generated images rather than broken links or empty placeholders.",
+        "Logo is displayed in the navbar using a generated image asset."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/royal-flame-logo.dim_512x512.png",
+          "operation": "create",
+          "description": "Add the generated logo asset to be referenced directly by the navbar and any brand marks."
+        },
+        {
+          "path": "frontend/public/assets/generated/hero-interior.dim_2400x1350.jpg",
+          "operation": "create",
+          "description": "Add the generated hero background image asset to be referenced directly by the Hero section."
+        },
+        {
+          "path": "frontend/public/assets/generated/about-ambience.dim_1400x1000.jpg",
+          "operation": "create",
+          "description": "Add the generated about image asset to be referenced directly by the About section."
+        },
+        {
+          "path": "frontend/public/assets/generated/menu-item-1.dim_1200x900.jpg",
+          "operation": "create",
+          "description": "Add generated featured menu image asset 1 for Featured Menu cards."
+        },
+        {
+          "path": "frontend/public/assets/generated/menu-item-2.dim_1200x900.jpg",
+          "operation": "create",
+          "description": "Add generated featured menu image asset 2 for Featured Menu cards."
+        },
+        {
+          "path": "frontend/public/assets/generated/menu-item-3.dim_1200x900.jpg",
+          "operation": "create",
+          "description": "Add generated featured menu image asset 3 for Featured Menu cards."
+        },
+        {
+          "path": "frontend/public/assets/generated/menu-item-4.dim_1200x900.jpg",
+          "operation": "create",
+          "description": "Add generated featured menu image asset 4 for Featured Menu cards."
+        },
+        {
+          "path": "frontend/public/assets/generated/menu-item-5.dim_1200x900.jpg",
+          "operation": "create",
+          "description": "Add generated featured menu image asset 5 for Featured Menu cards."
+        },
+        {
+          "path": "frontend/public/assets/generated/menu-item-6.dim_1200x900.jpg",
+          "operation": "create",
+          "description": "Add generated featured menu image asset 6 for Featured Menu cards."
+        },
+        {
+          "path": "frontend/public/assets/generated/gallery-1.dim_1400x1050.jpg",
+          "operation": "create",
+          "description": "Add generated gallery image asset 1 for the Gallery grid/lightbox."
+        },
+        {
+          "path": "frontend/public/assets/generated/gallery-2.dim_1400x1050.jpg",
+          "operation": "create",
+          "description": "Add generated gallery image asset 2 for the Gallery grid/lightbox."
+        },
+        {
+          "path": "frontend/public/assets/generated/gallery-3.dim_1400x1050.jpg",
+          "operation": "create",
+          "description": "Add generated gallery image asset 3 for the Gallery grid/lightbox."
+        },
+        {
+          "path": "frontend/public/assets/generated/gallery-4.dim_1400x1050.jpg",
+          "operation": "create",
+          "description": "Add generated gallery image asset 4 for the Gallery grid/lightbox."
+        },
+        {
+          "path": "frontend/public/assets/generated/gallery-5.dim_1400x1050.jpg",
+          "operation": "create",
+          "description": "Add generated gallery image asset 5 for the Gallery grid/lightbox."
+        },
+        {
+          "path": "frontend/public/assets/generated/gallery-6.dim_1400x1050.jpg",
+          "operation": "create",
+          "description": "Add generated gallery image asset 6 for the Gallery grid/lightbox."
+        },
+        {
+          "path": "frontend/public/assets/generated/gallery-7.dim_1400x1050.jpg",
+          "operation": "create",
+          "description": "Add generated gallery image asset 7 for the Gallery grid/lightbox."
+        },
+        {
+          "path": "frontend/public/assets/generated/gallery-8.dim_1400x1050.jpg",
+          "operation": "create",
+          "description": "Add generated gallery image asset 8 for the Gallery grid/lightbox."
+        },
+        {
+          "path": "frontend/src/components/royal-flame/Navbar.tsx",
+          "operation": "modify",
+          "description": "Reference and render the generated logo image from frontend/public/assets/generated/royal-flame-logo.dim_512x512.png in the sticky navbar."
+        },
+        {
+          "path": "frontend/src/components/royal-flame/sections/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Reference the hero background image from frontend/public/assets/generated/hero-interior.dim_2400x1350.jpg directly in the Hero section styling."
+        },
+        {
+          "path": "frontend/src/components/royal-flame/sections/AboutSection.tsx",
+          "operation": "modify",
+          "description": "Reference the about image from frontend/public/assets/generated/about-ambience.dim_1400x1000.jpg directly in the About section."
+        },
+        {
+          "path": "frontend/src/components/royal-flame/sections/FeaturedMenuSection.tsx",
+          "operation": "modify",
+          "description": "Reference menu item images from frontend/public/assets/generated/menu-item-1.dim_1200x900.jpg through frontend/public/assets/generated/menu-item-6.dim_1200x900.jpg directly in the 6 menu cards."
+        },
+        {
+          "path": "frontend/src/components/royal-flame/sections/GallerySection.tsx",
+          "operation": "modify",
+          "description": "Reference gallery images from frontend/public/assets/generated/gallery-1.dim_1400x1050.jpg through frontend/public/assets/generated/gallery-8.dim_1400x1050.jpg directly in the Gallery grid and lightbox."
+        }
+      ]
+    }
+  ]
+}

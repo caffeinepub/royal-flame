@@ -1,0 +1,256 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-implement-a-single-page-section-based-homepage-for-royal-flame-with-anchor-navigation-and-the-following-sections-in-order-hero-about-featured-menu-why-choose-us-gallery-testimonials-reservations-location-footer",
+      "featureTitle": "Implement a single-page, section-based homepage for “Royal Flame” with anchor navigation and the following sections in order: Hero, About, Featured Menu, Why Choose Us, Gallery, Testimonials, Reservations, Location, Footer.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-sticky-top-navbar-with-a-left-aligned-royal-flame-logo-menu-links-home-menu-about-gallery-reservations-contact-and-a-right-aligned-gold-accent-reservation-button",
+      "featureTitle": "Create a sticky top navbar with a left-aligned Royal Flame logo, menu links (Home, Menu, About, Gallery, Reservations, Contact), and a right-aligned gold-accent “Reservation” button.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/royal-flame/Navbar.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-the-full-width-hero-section-using-a-high-quality-restaurant-interior-background-image-with-a-dark-gradient-overlay-heading-text-experience-fine-dining-like-never-before-an-emotional-subheading-tagline-and-two-ctas-reserve-a-table-primary-gold-button-and-view-menu-outline-style",
+      "featureTitle": "Implement the full-width Hero section using a high-quality restaurant interior background image with a dark gradient overlay, heading text “Experience Fine Dining Like Never Before”, an emotional subheading tagline, and two CTAs: “Reserve a Table” (primary gold button) and “View Menu” (outline style).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/royal-flame/sections/HeroSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-the-about-section-as-a-split-layout-left-side-image-right-side-a-short-story-paragraph-plus-three-highlight-items-fresh-ingredients-award-winning-chefs-cozy-atmosphere",
+      "featureTitle": "Implement the About section as a split layout: left side image, right side a short story paragraph plus three highlight items: Fresh Ingredients, Award Winning Chefs, Cozy Atmosphere.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/royal-flame/sections/AboutSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-featured-menu-section-showing-exactly-6-food-items-in-a-responsive-grid-each-card-includes-a-food-image-name-short-description-and-price-with-a-soft-shadow-hover-effect",
+      "featureTitle": "Implement a Featured Menu section showing exactly 6 food items in a responsive grid; each card includes a food image, name, short description, and price, with a soft shadow hover effect.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/royal-flame/sections/FeaturedMenuSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-why-choose-us-section-with-4-icon-based-features-premium-quality-live-bbq-private-dining-rooms-fast-service",
+      "featureTitle": "Implement a “Why Choose Us” section with 4 icon-based features: Premium Quality, Live BBQ, Private Dining Rooms, Fast Service.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/royal-flame/sections/WhyChooseUsSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-gallery-section-as-a-responsive-grid-of-food-and-interior-images-with-a-lightbox-preview-effect-open-image-in-an-overlay-with-next-previous-controls-and-close",
+      "featureTitle": "Implement a Gallery section as a responsive grid of food and interior images with a lightbox preview effect (open image in an overlay with next/previous controls and close).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/royal-flame/GalleryLightbox.tsx",
+        "frontend/src/components/royal-flame/sections/GallerySection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-testimonials-section-with-centered-card-layout-showing-customer-review-text-and-a-star-rating-for-each-testimonial",
+      "featureTitle": "Implement a Testimonials section with centered card layout showing customer review text and a star rating for each testimonial.",
+      "files": [
+        "frontend/src/components/royal-flame/StarRating.tsx",
+        "frontend/src/components/royal-flame/sections/TestimonialsSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-reservations-section-containing-a-booking-form-with-fields-name-phone-date-time-guests-and-a-gold-accent-reserve-button-include-basic-client-side-validation-and-a-clear-success-state-after-submit",
+      "featureTitle": "Implement a Reservations section containing a booking form with fields: Name, Phone, Date, Time, Guests, and a gold-accent “Reserve” button; include basic client-side validation and a clear success state after submit.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/royal-flame/sections/ReservationsSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-location-section-with-an-embedded-map-placeholder-area-plus-address-and-contact-information-presented-clearly",
+      "featureTitle": "Implement a Location section with an embedded map placeholder area plus address and contact information presented clearly.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/royal-flame/sections/LocationSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-footer-with-4-columns-about-quick-links-opening-hours-social-media",
+      "featureTitle": "Implement a Footer with 4 columns: About, Quick Links, Opening Hours, Social Media.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/royal-flame/Footer.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-the-specified-brand-style-across-the-page-elegant-warm-minimal-luxury-cream-white-backgrounds-dark-brown-accents-gold-highlights-elegant-serif-for-headings-and-clean-sans-serif-for-body-modern-spacing-soft-shadows-and-smooth-scrolling-behavior",
+      "featureTitle": "Apply the specified brand style across the page: elegant/warm/minimal luxury; cream/white backgrounds, dark brown accents, gold highlights; elegant serif for headings and clean sans-serif for body; modern spacing, soft shadows, and smooth scrolling behavior.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-and-use-generated-static-image-assets-for-the-hero-about-featured-menu-items-gallery-and-a-simple-royal-flame-logo-stored-under-frontend-public-assets-generated-and-referenced-directly-from-the-frontend",
+      "featureTitle": "Add and use generated static image assets for the hero, about, featured menu items, gallery, and a simple Royal Flame logo, stored under frontend/public/assets/generated and referenced directly from the frontend.",
+      "files": [
+        "frontend/src/components/royal-flame/Navbar.tsx",
+        "frontend/src/components/royal-flame/sections/AboutSection.tsx",
+        "frontend/src/components/royal-flame/sections/FeaturedMenuSection.tsx",
+        "frontend/src/components/royal-flame/sections/GallerySection.tsx",
+        "frontend/src/components/royal-flame/sections/HeroSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

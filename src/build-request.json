@@ -1,0 +1,282 @@
+{
+  "kind": "build_request",
+  "title": "Royal Flame premium restaurant homepage (responsive, conversion-focused)",
+  "projectName": "Royal Flame",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Implement a single-page, section-based homepage for “Royal Flame” with anchor navigation and the following sections in order: Hero, About, Featured Menu, Why Choose Us, Gallery, Testimonials, Reservations, Location, Footer.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Homepage Layout:\n\n1. Sticky Navbar\n...\n10. Footer"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Homepage renders as a single scrolling page with all 10 requested sections present and visually separated.",
+        "Navbar links scroll to the correct section IDs (Home, Menu, About, Gallery, Reservations, Contact)."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Create a sticky top navbar with a left-aligned Royal Flame logo, menu links (Home, Menu, About, Gallery, Reservations, Contact), and a right-aligned gold-accent “Reservation” button.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "1. Sticky Navbar\nLogo on left\nMenu links: Home, Menu, About, Gallery, Reservations, Contact\nRight side reservation button (gold accent)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navbar stays visible at the top while scrolling.",
+        "Reservation button uses gold highlight styling and stands out from the text links.",
+        "On mobile, navigation remains usable (e.g., collapses into a menu/drawer)."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Implement the full-width Hero section using a high-quality restaurant interior background image with a dark gradient overlay, heading text “Experience Fine Dining Like Never Before”, an emotional subheading tagline, and two CTAs: “Reserve a Table” (primary gold button) and “View Menu” (outline style).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "2. Hero Section (Full Width)\nLarge high-quality restaurant interior background image\nOverlay dark gradient\nHeading: \"Experience Fine Dining Like Never Before\"\nSubheading: Short emotional tagline\nCTA Buttons:\n- Reserve a Table (primary gold button)\n- View Menu (outline style)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero background image is full-width with an overlay gradient to maintain text legibility.",
+        "Hero renders exactly the specified heading text.",
+        "Two CTA buttons are present with distinct primary/outline styling.",
+        "“Reserve a Table” scrolls to the Reservations section; “View Menu” scrolls to Featured Menu."
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Implement the About section as a split layout: left side image, right side a short story paragraph plus three highlight items: Fresh Ingredients, Award Winning Chefs, Cozy Atmosphere.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "3. About Section (Split Layout)\nLeft: Restaurant image\nRight: Story of the restaurant (short paragraph)\nInclude 3 highlights:\n- Fresh Ingredients\n- Award Winning Chefs\n- Cozy Atmosphere"
+        ]
+      },
+      "acceptanceCriteria": [
+        "About section uses a two-column layout on desktop and stacks cleanly on mobile.",
+        "All three highlight items are displayed and readable."
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Implement a Featured Menu section showing exactly 6 food items in a responsive grid; each card includes a food image, name, short description, and price, with a soft shadow hover effect.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "4. Featured Menu Section\nDisplay 6 food items in grid layout\nEach card:\n- Food image\n- Name\n- Short description\n- Price\nHover effect with soft shadow"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Exactly 6 menu cards appear.",
+        "Each menu card contains image, title, description, and price.",
+        "Hover state adds a subtle premium shadow and/or lift effect (where hover is available)."
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Implement a “Why Choose Us” section with 4 icon-based features: Premium Quality, Live BBQ, Private Dining Rooms, Fast Service.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "5. Why Choose Us Section\nIcon-based 4 features:\n- Premium Quality\n- Live BBQ\n- Private Dining Rooms\n- Fast Service"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All four features are displayed with icons and labels.",
+        "Layout is responsive and maintains consistent spacing/alignment."
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Implement a Gallery section as a responsive grid of food and interior images with a lightbox preview effect (open image in an overlay with next/previous controls and close).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "6. Gallery Section\nGrid of food and interior images\nLightbox preview effect"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Gallery displays a grid of images.",
+        "Clicking an image opens a lightbox overlay.",
+        "User can close the lightbox and navigate between images in the overlay."
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Implement a Testimonials section with centered card layout showing customer review text and a star rating for each testimonial.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "7. Testimonials Section\nCustomer reviews with star rating\nCentered card layout"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Each testimonial shows review text and a visible star rating.",
+        "Testimonials are presented in a centered, premium-looking card layout and remain readable on mobile."
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Implement a Reservations section containing a booking form with fields: Name, Phone, Date, Time, Guests, and a gold-accent “Reserve” button; include basic client-side validation and a clear success state after submit.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "8. Reservation Section\nSimple booking form:\n- Name\n- Phone\n- Date\n- Time\n- Guests\nReserve button (gold accent)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Form contains exactly the requested fields and a Reserve button.",
+        "Invalid submissions are blocked with inline validation feedback (e.g., required fields).",
+        "On successful submit, the user sees a confirmation message/state without a page reload."
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Implement a Location section with an embedded map placeholder area plus address and contact information presented clearly.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "9. Location Section\nEmbedded map placeholder\nAddress and contact info"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A map placeholder block is visible and sized appropriately for desktop and mobile.",
+        "Address and contact info are displayed adjacent to or below the map placeholder."
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Implement a Footer with 4 columns: About, Quick Links, Opening Hours, Social Media.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "10. Footer\n4 columns:\n- About\n- Quick Links\n- Opening Hours\n- Social Media"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer contains four distinct columns with the requested headings.",
+        "On mobile, footer columns stack in a readable order with consistent spacing."
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Apply the specified brand style across the page: elegant/warm/minimal luxury; cream/white backgrounds, dark brown accents, gold highlights; elegant serif for headings and clean sans-serif for body; modern spacing, soft shadows, and smooth scrolling behavior.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Style: Elegant, warm, luxurious but minimal\nColor Scheme: Cream / white background, dark brown accents, gold highlights\nTypography: Elegant serif heading font + clean sans-serif body font\nDesign Requirements:\n- Fully responsive\n- Modern spacing\n- Soft shadows\n- Smooth scroll animation\n- Clean professional layout\n- High-resolution UI mockup\n- Conversion focused design"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Global color palette reflects cream/white + dark brown + gold accent (no default/unstyled theme).",
+        "Headings use a serif font and body text uses a sans-serif font consistently.",
+        "Smooth scrolling is enabled for in-page navigation.",
+        "All sections are responsive with consistent spacing and premium-feeling shadows on cards/buttons where appropriate."
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Add and use generated static image assets for the hero, about, featured menu items, gallery, and a simple Royal Flame logo, stored under frontend/public/assets/generated and referenced directly from the frontend.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Large high-quality restaurant interior background image",
+          "Left: Restaurant image",
+          "Display 6 food items in grid layout",
+          "Grid of food and interior images"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All required images exist in frontend/public/assets/generated and load correctly in the UI.",
+        "Hero, About, Menu cards, and Gallery render using the generated images rather than broken links or empty placeholders.",
+        "Logo is displayed in the navbar using a generated image asset."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend must not modify files in the immutable paths listed in SYSTEM_CONTEXT (compose read-only UI components rather than editing them).",
+    "Backend must remain a single-actor Motoko canister if backend work is later added."
+  ],
+  "nonGoals": [
+    "Implementing real map integration (use an embedded map placeholder only).",
+    "Implementing third-party booking integrations, payments, or external databases.",
+    "Implementing multi-page routing beyond the single-page section-based homepage (unless required by the template)."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Royal Flame logo mark on transparent background, elegant minimal gold flame + serif wordmark (royal-flame-logo.dim_512x512.png)",
+      "Full-width fine dining restaurant interior photo, warm lighting, premium atmosphere (hero-interior.dim_2400x1350.jpg)",
+      "Fine dining ambience photo for about section, warm luxurious minimal look (about-ambience.dim_1400x1000.jpg)",
+      "Plated steak with sauce, premium food photography, warm tones (menu-item-1.dim_1200x900.jpg)",
+      "BBQ platter with grilled meats, premium food photography, warm tones (menu-item-2.dim_1200x900.jpg)",
+      "Continental pasta dish, premium food photography, warm tones (menu-item-3.dim_1200x900.jpg)",
+      "Gourmet burger or slider, premium food photography, warm tones (menu-item-4.dim_1200x900.jpg)",
+      "Seafood plate, premium food photography, warm tones (menu-item-5.dim_1200x900.jpg)",
+      "Dessert plate, premium food photography, warm tones (menu-item-6.dim_1200x900.jpg)",
+      "Gallery photo: elegant dining room wide shot, warm lighting (gallery-1.dim_1400x1050.jpg)",
+      "Gallery photo: close-up plating detail, premium aesthetic (gallery-2.dim_1400x1050.jpg)",
+      "Gallery photo: chef at grill/BBQ scene, warm dramatic light (gallery-3.dim_1400x1050.jpg)",
+      "Gallery photo: table setting with glassware, minimal luxury (gallery-4.dim_1400x1050.jpg)",
+      "Gallery photo: cocktail/mocktail close-up, warm tones (gallery-5.dim_1400x1050.jpg)",
+      "Gallery photo: dessert close-up, premium aesthetic (gallery-6.dim_1400x1050.jpg)",
+      "Gallery photo: private dining room ambience, warm lighting (gallery-7.dim_1400x1050.jpg)",
+      "Gallery photo: assorted dishes on table, premium spread (gallery-8.dim_1400x1050.jpg)"
+    ],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

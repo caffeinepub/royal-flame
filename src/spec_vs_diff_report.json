@@ -1,0 +1,97 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-18T04:54:26.858Z",
+  "summary": "The diff implements the single-page Royal Flame homepage with most requested sections, styling, navigation, and interactive features (lightbox, reservation form validation/success). However, some requirements are incomplete or mismatched, notably the Gallery image set size and missing section IDs for in-page navigation targets. Several unrequested platform/authentication features were also added.",
+  "missing_requirements": [
+    {
+      "id": "REQ-1",
+      "requirement": "Homepage renders as a single scrolling page with all requested sections present and navbar links scroll to the correct section IDs (Home, Menu, About, Gallery, Reservations, Contact).",
+      "reason": "The Why Choose Us and Testimonials sections do not include explicit section IDs, which can make anchor navigation/in-page linking incomplete for the full set of sections and section-based structure.",
+      "evidence": [
+        "frontend/src/components/royal-flame/sections/WhyChooseUsSection.tsx",
+        "frontend/src/components/royal-flame/sections/TestimonialsSection.tsx"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "requirement": "Create a sticky top navbar with a right-aligned gold-accent “Reservation” button.",
+      "reason": "Navbar includes a gold-accent button, but its label is “Reserve Table” rather than the requested “Reservation” wording.",
+      "evidence": [
+        "frontend/src/components/royal-flame/Navbar.tsx"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "requirement": "Implement a Gallery section as a responsive grid of food and interior images with a lightbox preview effect.",
+      "reason": "BuildRequest specifies 8 gallery images (gallery-1 through gallery-8), but the GallerySection only uses 6 images (gallery-1 through gallery-6).",
+      "evidence": [
+        "frontend/src/components/royal-flame/sections/GallerySection.tsx"
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "requirement": "Add and use generated static image assets for the hero, about, featured menu items, gallery, and logo, stored under frontend/public/assets/generated.",
+      "reason": "The UI references generated assets paths, but the diff summary does not include the actual image files under frontend/public/assets/generated (they may be in omitted files, but this cannot be verified from the provided diff summary).",
+      "evidence": [
+        "frontend/src/components/royal-flame/Navbar.tsx",
+        "frontend/src/components/royal-flame/sections/HeroSection.tsx",
+        "frontend/src/components/royal-flame/sections/AboutSection.tsx",
+        "frontend/src/components/royal-flame/sections/FeaturedMenuSection.tsx",
+        "frontend/src/components/royal-flame/sections/GallerySection.tsx"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Internet Identity authentication provider/hooks and actor creation with React Query integration.",
+      "reason": "BuildRequest only asks for a static, conversion-focused homepage and does not request authentication, identity handling, or canister actor plumbing.",
+      "evidence": [
+        "frontend/src/hooks/useInternetIdentity.ts",
+        "frontend/src/hooks/useActor.ts",
+        "frontend/src/main.tsx"
+      ]
+    },
+    {
+      "description": "Backend Motoko canister stub added (empty actor).",
+      "reason": "BuildRequest does not require backend changes for this homepage; it only constrains backend shape if later added.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "description": "Caffeine.ai attribution/UTM link logic in the footer (including appIdentifier computation).",
+      "reason": "Not requested in the BuildRequest requirements or acceptance criteria.",
+      "evidence": [
+        "frontend/src/components/royal-flame/Footer.tsx"
+      ]
+    }
+  ],
+  "confidence": 0.74,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/royal-flame/Footer.tsx",
+    "frontend/src/components/royal-flame/GalleryLightbox.tsx",
+    "frontend/src/components/royal-flame/Navbar.tsx",
+    "frontend/src/components/royal-flame/StarRating.tsx",
+    "frontend/src/components/royal-flame/sections/AboutSection.tsx",
+    "frontend/src/components/royal-flame/sections/FeaturedMenuSection.tsx",
+    "frontend/src/components/royal-flame/sections/GallerySection.tsx",
+    "frontend/src/components/royal-flame/sections/HeroSection.tsx",
+    "frontend/src/components/royal-flame/sections/LocationSection.tsx",
+    "frontend/src/components/royal-flame/sections/ReservationsSection.tsx",
+    "frontend/src/components/royal-flame/sections/TestimonialsSection.tsx",
+    "frontend/src/components/royal-flame/sections/WhyChooseUsSection.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

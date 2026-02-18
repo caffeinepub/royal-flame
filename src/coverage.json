@@ -1,0 +1,350 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-18T04:54:26.861Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 13,
+    "implemented": 13,
+    "items": [
+      {
+        "id": "REQ-1",
+        "summary": "Implement a single-page, section-based homepage for “Royal Flame” with anchor navigation and the following sections in order: Hero, About, Featured Menu, Why Choose Us, Gallery, Testimonials, Reservations, Location, Footer.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/components/royal-flame/sections/Sections.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-10",
+        "summary": "Implement a Location section with an embedded map placeholder area plus address and contact information presented clearly.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/royal-flame/sections/LocationSection.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/royal-flame/sections/LocationSection.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-11",
+        "summary": "Implement a Footer with 4 columns: About, Quick Links, Opening Hours, Social Media.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/royal-flame/Footer.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/royal-flame/Footer.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-12",
+        "summary": "Apply the specified brand style across the page: elegant/warm/minimal luxury; cream/white backgrounds, dark brown accents, gold highlights; elegant serif for headings and clean sans-serif for body; modern spacing, soft shadows, and smooth scrolling behavior.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-13",
+        "summary": "Add and use generated static image assets for the hero, about, featured menu items, gallery, and a simple Royal Flame logo, stored under frontend/public/assets/generated and referenced directly from the frontend.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/public/assets/generated/royal-flame-logo.dim_512x512.png",
+          "frontend/public/assets/generated/hero-interior.dim_2400x1350.jpg",
+          "frontend/public/assets/generated/about-ambience.dim_1400x1000.jpg",
+          "frontend/public/assets/generated/menu-item-1.dim_1200x900.jpg",
+          "frontend/public/assets/generated/menu-item-2.dim_1200x900.jpg",
+          "frontend/public/assets/generated/menu-item-3.dim_1200x900.jpg",
+          "frontend/public/assets/generated/menu-item-4.dim_1200x900.jpg",
+          "frontend/public/assets/generated/menu-item-5.dim_1200x900.jpg",
+          "frontend/public/assets/generated/menu-item-6.dim_1200x900.jpg",
+          "frontend/public/assets/generated/gallery-1.dim_1400x1050.jpg",
+          "frontend/public/assets/generated/gallery-2.dim_1400x1050.jpg",
+          "frontend/public/assets/generated/gallery-3.dim_1400x1050.jpg",
+          "frontend/public/assets/generated/gallery-4.dim_1400x1050.jpg",
+          "frontend/public/assets/generated/gallery-5.dim_1400x1050.jpg",
+          "frontend/public/assets/generated/gallery-6.dim_1400x1050.jpg",
+          "frontend/public/assets/generated/gallery-7.dim_1400x1050.jpg",
+          "frontend/public/assets/generated/gallery-8.dim_1400x1050.jpg",
+          "frontend/src/components/royal-flame/Navbar.tsx",
+          "frontend/src/components/royal-flame/sections/HeroSection.tsx",
+          "frontend/src/components/royal-flame/sections/AboutSection.tsx",
+          "frontend/src/components/royal-flame/sections/FeaturedMenuSection.tsx",
+          "frontend/src/components/royal-flame/sections/GallerySection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/public/assets/generated/royal-flame-logo.dim_512x512.png",
+          "frontend/public/assets/generated/hero-interior.dim_2400x1350.jpg",
+          "frontend/public/assets/generated/about-ambience.dim_1400x1000.jpg",
+          "frontend/public/assets/generated/menu-item-1.dim_1200x900.jpg",
+          "frontend/public/assets/generated/menu-item-2.dim_1200x900.jpg",
+          "frontend/public/assets/generated/menu-item-3.dim_1200x900.jpg",
+          "frontend/public/assets/generated/menu-item-4.dim_1200x900.jpg",
+          "frontend/public/assets/generated/menu-item-5.dim_1200x900.jpg",
+          "frontend/public/assets/generated/menu-item-6.dim_1200x900.jpg",
+          "frontend/public/assets/generated/gallery-1.dim_1400x1050.jpg",
+          "frontend/public/assets/generated/gallery-2.dim_1400x1050.jpg",
+          "frontend/public/assets/generated/gallery-3.dim_1400x1050.jpg",
+          "frontend/public/assets/generated/gallery-4.dim_1400x1050.jpg",
+          "frontend/public/assets/generated/gallery-5.dim_1400x1050.jpg",
+          "frontend/public/assets/generated/gallery-6.dim_1400x1050.jpg",
+          "frontend/src/components/royal-flame/Navbar.tsx",
+          "frontend/src/components/royal-flame/sections/HeroSection.tsx",
+          "frontend/src/components/royal-flame/sections/AboutSection.tsx",
+          "frontend/src/components/royal-flame/sections/FeaturedMenuSection.tsx",
+          "frontend/src/components/royal-flame/sections/GallerySection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "summary": "Create a sticky top navbar with a left-aligned Royal Flame logo, menu links (Home, Menu, About, Gallery, Reservations, Contact), and a right-aligned gold-accent “Reservation” button.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/royal-flame/Navbar.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/royal-flame/Navbar.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-3",
+        "summary": "Implement the full-width Hero section using a high-quality restaurant interior background image with a dark gradient overlay, heading text “Experience Fine Dining Like Never Before”, an emotional subheading tagline, and two CTAs: “Reserve a Table” (primary gold button) and “View Menu” (outline style).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/royal-flame/sections/HeroSection.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/royal-flame/sections/HeroSection.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-4",
+        "summary": "Implement the About section as a split layout: left side image, right side a short story paragraph plus three highlight items: Fresh Ingredients, Award Winning Chefs, Cozy Atmosphere.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/royal-flame/sections/AboutSection.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/royal-flame/sections/AboutSection.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-5",
+        "summary": "Implement a Featured Menu section showing exactly 6 food items in a responsive grid; each card includes a food image, name, short description, and price, with a soft shadow hover effect.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/royal-flame/sections/FeaturedMenuSection.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/royal-flame/sections/FeaturedMenuSection.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-6",
+        "summary": "Implement a “Why Choose Us” section with 4 icon-based features: Premium Quality, Live BBQ, Private Dining Rooms, Fast Service.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/royal-flame/sections/WhyChooseUsSection.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/royal-flame/sections/WhyChooseUsSection.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-7",
+        "summary": "Implement a Gallery section as a responsive grid of food and interior images with a lightbox preview effect (open image in an overlay with next/previous controls and close).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/royal-flame/sections/GallerySection.tsx",
+          "frontend/src/components/royal-flame/GalleryLightbox.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/royal-flame/sections/GallerySection.tsx",
+          "frontend/src/components/royal-flame/GalleryLightbox.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-8",
+        "summary": "Implement a Testimonials section with centered card layout showing customer review text and a star rating for each testimonial.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/royal-flame/sections/TestimonialsSection.tsx",
+          "frontend/src/components/royal-flame/StarRating.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/royal-flame/sections/TestimonialsSection.tsx",
+          "frontend/src/components/royal-flame/StarRating.tsx"
+        ]
+      },
+      {
+        "id": "REQ-9",
+        "summary": "Implement a Reservations section containing a booking form with fields: Name, Phone, Date, Time, Guests, and a gold-accent “Reserve” button; include basic client-side validation and a clear success state after submit.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/royal-flame/sections/ReservationsSection.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/royal-flame/sections/ReservationsSection.tsx",
+          "frontend/src/App.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "build-request.json",
+    "build-template/Dockerfile",
+    "build-template/LICENSE",
+    "build-template/README.md",
+    "build-template/deploy.sh",
+    "build-template/icp.yaml",
+    "build-template/package.json",
+    "build-template/pnpm-lock.yaml",
+    "build-template/pnpm-workspace.yaml",
+    "build-template/scripts/prune-unused-images.js",
+    "build-template/scripts/resize-images.js",
+    "build-template/src/backend/canister.yaml",
+    "build-template/src/backend/system-idl/aaaaa-aa.did",
+    "build-template/src/frontend/canister.yaml",
+    "build-template/src/frontend/components.json",
+    "build-template/src/frontend/env.json",
+    "build-template/src/frontend/eslint-rules/no-bigint-in-query-keys.js",
+    "build-template/src/frontend/eslint-rules/require-internet-identity-provider.js",
+    "build-template/src/frontend/eslint.config.js",
+    "build-template/src/frontend/package.json",
+    "build-template/src/frontend/postcss.config.js",
+    "build-template/src/frontend/src/components/ui/accordion.tsx",
+    "build-template/src/frontend/src/components/ui/alert-dialog.tsx",
+    "build-template/src/frontend/src/components/ui/alert.tsx",
+    "build-template/src/frontend/src/components/ui/aspect-ratio.tsx",
+    "build-template/src/frontend/src/components/ui/avatar.tsx",
+    "build-template/src/frontend/src/components/ui/badge.tsx",
+    "build-template/src/frontend/src/components/ui/breadcrumb.tsx",
+    "build-template/src/frontend/src/components/ui/button.tsx",
+    "build-template/src/frontend/src/components/ui/calendar.tsx",
+    "build-template/src/frontend/src/components/ui/card.tsx",
+    "build-template/src/frontend/src/components/ui/carousel.tsx",
+    "build-template/src/frontend/src/components/ui/chart.tsx",
+    "build-template/src/frontend/src/components/ui/checkbox.tsx",
+    "build-template/src/frontend/src/components/ui/collapsible.tsx",
+    "build-template/src/frontend/src/components/ui/command.tsx",
+    "build-template/src/frontend/src/components/ui/context-menu.tsx",
+    "build-template/src/frontend/src/components/ui/dialog.tsx",
+    "build-template/src/frontend/src/components/ui/drawer.tsx",
+    "build-template/src/frontend/src/components/ui/dropdown-menu.tsx",
+    "build-template/src/frontend/src/components/ui/form.tsx",
+    "build-template/src/frontend/src/components/ui/hover-card.tsx",
+    "build-template/src/frontend/src/components/ui/input-otp.tsx",
+    "build-template/src/frontend/src/components/ui/input.tsx",
+    "build-template/src/frontend/src/components/ui/label.tsx",
+    "build-template/src/frontend/src/components/ui/menubar.tsx",
+    "build-template/src/frontend/src/components/ui/navigation-menu.tsx",
+    "build-template/src/frontend/src/components/ui/pagination.tsx",
+    "build-template/src/frontend/src/components/ui/popover.tsx",
+    "build-template/src/frontend/src/components/ui/progress.tsx",
+    "build-template/src/frontend/src/components/ui/radio-group.tsx",
+    "build-template/src/frontend/src/components/ui/resizable.tsx",
+    "build-template/src/frontend/src/components/ui/scroll-area.tsx",
+    "build-template/src/frontend/src/components/ui/select.tsx",
+    "build-template/src/frontend/src/components/ui/separator.tsx",
+    "build-template/src/frontend/src/components/ui/sheet.tsx",
+    "build-template/src/frontend/src/components/ui/sidebar.tsx",
+    "build-template/src/frontend/src/components/ui/skeleton.tsx",
+    "build-template/src/frontend/src/components/ui/slider.tsx",
+    "build-template/src/frontend/src/components/ui/sonner.tsx",
+    "build-template/src/frontend/src/components/ui/switch.tsx",
+    "build-template/src/frontend/src/components/ui/table.tsx",
+    "build-template/src/frontend/src/components/ui/tabs.tsx",
+    "build-template/src/frontend/src/components/ui/textarea.tsx",
+    "build-template/src/frontend/src/components/ui/toggle-group.tsx",
+    "build-template/src/frontend/src/components/ui/toggle.tsx",
+    "build-template/src/frontend/src/components/ui/tooltip.tsx",
+    "build-template/src/frontend/src/hooks/use-mobile.tsx",
+    "build-template/src/frontend/src/lib/utils.ts",
+    "build-template/src/frontend/tsconfig.json",
+    "build-template/src/frontend/vite.config.js",
+    "build-template/tsconfig.json",
+    "caffeine.lock.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/public/assets/generated/about-ambience.dim_1400x1000.jpg",
+    "frontend/public/assets/generated/gallery-1.dim_1400x1050.jpg",
+    "frontend/public/assets/generated/gallery-2.dim_1400x1050.jpg",
+    "frontend/public/assets/generated/gallery-3.dim_1400x1050.jpg",
+    "frontend/public/assets/generated/gallery-4.dim_1400x1050.jpg",
+    "frontend/public/assets/generated/gallery-5.dim_1400x1050.jpg",
+    "frontend/public/assets/generated/gallery-6.dim_1400x1050.jpg",
+    "frontend/public/assets/generated/hero-interior.dim_2400x1350.jpg",
+    "frontend/public/assets/generated/menu-item-1.dim_1200x900.jpg",
+    "frontend/public/assets/generated/menu-item-2.dim_1200x900.jpg",
+    "frontend/public/assets/generated/menu-item-3.dim_1200x900.jpg",
+    "frontend/public/assets/generated/menu-item-4.dim_1200x900.jpg",
+    "frontend/public/assets/generated/menu-item-5.dim_1200x900.jpg",
+    "frontend/public/assets/generated/menu-item-6.dim_1200x900.jpg",
+    "frontend/public/assets/generated/royal-flame-logo.dim_512x512.png",
+    "frontend/src/App.tsx",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/royal-flame/Footer.tsx",
+    "frontend/src/components/royal-flame/GalleryLightbox.tsx",
+    "frontend/src/components/royal-flame/Navbar.tsx",
+    "frontend/src/components/royal-flame/StarRating.tsx",
+    "frontend/src/components/royal-flame/sections/AboutSection.tsx",
+    "frontend/src/components/royal-flame/sections/FeaturedMenuSection.tsx",
+    "frontend/src/components/royal-flame/sections/GallerySection.tsx",
+    "frontend/src/components/royal-flame/sections/HeroSection.tsx",
+    "frontend/src/components/royal-flame/sections/LocationSection.tsx",
+    "frontend/src/components/royal-flame/sections/ReservationsSection.tsx",
+    "frontend/src/components/royal-flame/sections/TestimonialsSection.tsx",
+    "frontend/src/components/royal-flame/sections/WhyChooseUsSection.tsx",
+    "frontend/src/config.ts",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/ui-summary.json",
+    "frontend/src/utils/StorageClient.ts",
+    "frontend/tailwind.config.js",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

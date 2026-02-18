@@ -1,0 +1,17 @@
+{
+  "frontend/src/index.css": "Global styles with OKLCH color system defining cream/white backgrounds, dark brown accents, gold highlights, serif headings (Playfair Display), sans-serif body (Inter), and smooth scrolling behavior for the Royal Flame brand.",
+  "frontend/tailwind.config.js": "Extended Tailwind configuration with Royal Flame brand colors (cream, dark brown, gold), custom font families (Playfair Display serif, Inter sans), premium shadow utilities, and responsive design tokens.",
+  "frontend/src/App.tsx": "Main application component rendering the single-page Royal Flame restaurant website with all sections in order: Navbar, Hero, About, Featured Menu, Why Choose Us, Gallery, Testimonials, Reservations, Location, and Footer.",
+  "frontend/src/components/royal-flame/Navbar.tsx": "Sticky navigation bar with Royal Flame logo, anchor links to all sections, gold-accent reservation button, and responsive mobile menu with hamburger toggle.",
+  "frontend/src/components/royal-flame/sections/HeroSection.tsx": "Full-width hero section with restaurant interior background image, dark gradient overlay, heading \"Experience Fine Dining Like Never Before\", tagline, and two CTA buttons (Reserve/View Menu) that scroll to respective sections.",
+  "frontend/src/components/royal-flame/sections/AboutSection.tsx": "Split-layout about section with restaurant ambience image on left and story text with three icon-based highlights (Fresh Ingredients, Award Winning Chefs, Cozy Atmosphere) on right, fully responsive.",
+  "frontend/src/components/royal-flame/sections/FeaturedMenuSection.tsx": "Featured menu grid displaying exactly 6 menu items with images, names, descriptions, and prices, featuring premium hover effects with shadow and lift transforms.",
+  "frontend/src/components/royal-flame/sections/WhyChooseUsSection.tsx": "Four-column grid showcasing key features (Premium Quality, Live BBQ, Private Dining Rooms, Fast Service) with icons and descriptions in premium card layouts.",
+  "frontend/src/components/royal-flame/sections/GallerySection.tsx": "Responsive image gallery grid with 6 photos that open in a lightbox overlay when clicked, featuring hover scale effects.",
+  "frontend/src/components/royal-flame/GalleryLightbox.tsx": "Full-screen lightbox overlay component with image display, close button, previous/next navigation controls, keyboard support (arrows/escape), and image counter.",
+  "frontend/src/components/royal-flame/sections/TestimonialsSection.tsx": "Three-column testimonials section displaying customer reviews with star ratings, names, and review text in premium card layouts.",
+  "frontend/src/components/royal-flame/StarRating.tsx": "Reusable star rating display component showing filled/unfilled stars based on rating value, styled with gold accent color.",
+  "frontend/src/components/royal-flame/sections/ReservationsSection.tsx": "Booking form with fields for name, phone, date, time, and guests, featuring client-side validation, error messages, and success confirmation state without page reload.",
+  "frontend/src/components/royal-flame/sections/LocationSection.tsx": "Location section with map placeholder and contact information grid displaying address, phone, email, and opening hours with icon-based layout.",
+  "frontend/src/components/royal-flame/Footer.tsx": "Four-column footer with About, Quick Links, Opening Hours, and Social Media sections, plus bottom bar with copyright, current year, and Caffeine.ai attribution with UTM tracking."
+}
